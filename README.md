@@ -1,16 +1,26 @@
-## Hi there 👋
+# Hi there, I'm Gabriel! 👋
 
-<!--
-**NullGab/NullGab** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+```go
+package main
 
-Here are some ideas to get you started:
+import "fmt"
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+type Student struct {
+  Name       string
+  University string
+  Major      string
+  Stack      []string
+  OS         string
+}
+
+func main() {
+  gabriel := Student{
+    Name:       "Gabriel",
+    University: "Universidade Estadual de Goiás (UEG)",
+    Major:      "Sistemas de Informação",
+    Stack:      []string{"Go", "C++", "Java", "C"},
+    OS:         "Arch Linux",
+  }
+
+  fmt.Printf("%+v\n", gabriel)
+}
